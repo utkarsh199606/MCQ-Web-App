@@ -1,0 +1,402 @@
+/* header */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body, body * {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    overflow-x: hidden; /* Hide scrollbars */
+}
+
+.header h1{
+    font-weight: 600;
+    line-height: 72px;
+    letter-spacing: -0.5px;
+    font-size: 2.5rem;
+}
+
+.pink_c {
+    color: #f54a8d;
+}
+
+.blue_c {
+    color: #133382;
+}
+
+.sticky{
+    box-shadow: 0 0 3px rgb(0 0 0 / 15%);
+}
+
+/* main body */
+
+/* main content */
+
+.main-content{
+    padding: 0 10px;
+    border: none;
+}
+
+.col-9, .column.three-fourth {
+    width: 75%;
+}
+.col-3, .column.one-fourth {
+    width: 25%;
+}
+
+.card{
+    box-shadow: 10px 5px 5px lightgrey;
+}
+
+/* main content - upper text */
+
+.questionDisplay{
+    margin-bottom: 28px;
+    overflow: hidden;
+}
+
+.upper-text{
+    background-color: #f54a8d;
+    color: #fff;
+}
+
+.textwelcome1 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px 0 10px 42px;
+}
+
+.textwelcome2 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px 50px 10px 0px;
+}
+
+span #remaining_time{
+    display: inline-block;
+}
+.sectionQuestion {
+    padding: 6px 5px 5px 5px;
+    background-color: #133382;
+    color: #fff;
+}
+
+#questionNo{
+    font-weight: bold;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.marks {
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 3px 50px 10px 0px;
+}
+
+div.questionsDetails{
+    height: 300px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+div.questionsDetails .question {
+    margin-left: 3.5%;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.questionOptions .btn_option{
+    border-radius: 10px;
+    margin: 10px 0px 10px 0px;
+    letter-spacing: 1px;
+    text-align: left;
+    max-width: 85%;
+}
+
+.questionOptions .btn_option1{
+    background-image: linear-gradient( 109.8deg,  rgba(62,5,116,1) -5.2%, rgba(41,14,151,1) -5.2%, rgba(216,68,148,1) 103.3% );
+    color: #fff;
+    border-radius: 10px;
+    margin: 10px 0px 10px 0px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.questionOptions .options{
+    margin: 0 10px 0 20px;
+}
+
+.questionOptions {
+    padding-top: 15px;
+}
+
+.main-question{
+    display: flex;
+    justify-content: center;
+}
+
+.questionFooter{
+    margin-top: 20px;
+}
+
+.questionFooter .btn{
+    margin: 0px 10px 0px 10px;
+    color: #fff;
+}
+
+#button1 {
+    padding: 6px 50px;
+}
+
+#button3 {
+    padding: 6px 25px;
+}
+
+#button4 {
+    padding: 6px 65px;
+}
+
+#button5 {
+    margin: 0% 17%;
+}
+
+#button1:hover,  #button2:hover, #button3:hover, #button4:hover, #button5:hover{
+    color: #fff;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.7); 
+}
+
+#option1,#option2,#option3,#option4 {
+    accent-color: #f54a8d;
+}
+
+/* side section */
+
+.card-left_1{
+    background-color: #fff;
+    box-shadow: 10px 5px 5px lightgrey;
+    padding: 5px 15px 0px 10px;
+    height: 260px
+}
+
+.card-left_2{
+    background-color: #fff;
+    box-shadow: 10px 5px 5px lightgrey;
+    padding: 15px 15px 0px 15px;
+    height: 310px;
+}
+
+#Legends{
+    margin-top: 40px;
+}
+
+.notVisited {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+/* card right below */
+
+.NotVisited, .NotAnswered, .Answered, .MarkedForReview, .AnsweredMarked{
+    cursor: pointer;
+    margin: 5px 0;
+    padding: 10px 0;
+    font-size: 13px;
+}
+
+.NotVisited span, .span{
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+    padding: 8px 17px;
+}
+
+.NotAnswered span , .red{
+    background-image: radial-gradient( circle farthest-corner at 14.2% 24%,  rgba(239,61,78,1) 0%, rgba(239,61,78,0.81) 51.8%, rgba(239,61,78,0.63) 84.6% );
+    padding: 8px 17px;
+}
+
+.Answered span, .green{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% );
+    padding: 8px 17px;
+}
+
+.MarkedForReview span, .orange{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,209,67,1) 0%, rgba(255,145,83,1) 90% );
+    padding: 8px 17px;
+}
+
+.AnsweredMarked span, .blue{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,221,214,1) 0%, rgba(51,102,255,1) 90% );
+    padding: 8px 17px;
+}
+
+/* card last */
+
+span.color_text{
+    font-size: 14px;
+}
+
+/* media query */
+
+@media (max-width: 770px) {
+    #button5 {
+        margin: 0% 14%;
+    }
+    #Legends{
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 450px) {
+    .tree-logo{
+        width: 30px;
+    }
+    .textwelcome1 {
+        font-size: 13px;
+        margin: 10px 0 10px 20px;
+    }
+    .textwelcome2 {
+        font-size: 13px;
+        margin: 10px 20px 10px 0px;
+    }
+    .question{
+        font-size: 18px;
+        margin: 10px 0 10px 15px;
+        max-width: 100%;
+    }
+    #questionNo{
+        margin-left: 15px;
+    }
+    .marks{
+        font-size: 13px;
+        margin: 3px 15px 10px 0px;
+    }
+    .questionsDetails .question{
+        margin: 0 0 0 50px;
+    }
+    .questionOptions .btn_option{
+        font-size: 13px;
+        letter-spacing: 0px;
+    }
+    .questionOptions .btn_num{
+        font-size: 15px;
+    }
+    .questionFooter .btn{
+        margin: 0px;
+        font-size: 14px;
+        padding: 10;
+    }
+
+    #button5 {
+        margin: 0% 6%;
+    }
+
+    .row .notVisited {
+        cursor: pointer;
+        margin: 5px 0;
+        padding: 10px 0;
+    }
+
+    .nav-logo{
+        width: 35%;
+    }
+
+    span.space{
+        margin-left: 4.5rem;
+    }
+
+    .NotVisited span, .span{
+        background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+        padding: 12px 20px;
+    }
+    
+    .NotAnswered span , .red{
+        background-image: radial-gradient( circle farthest-corner at 14.2% 24%,  rgba(239,61,78,1) 0%, rgba(239,61,78,0.81) 51.8%, rgba(239,61,78,0.63) 84.6% );
+        padding: 12px 20px;
+    }
+    
+    .Answered span, .green{
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% );
+        padding: 12px 20px;
+    }
+    
+    .MarkedForReview span, .orange{
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,209,67,1) 0%, rgba(255,145,83,1) 90% );
+        padding: 12px 20px;
+    }
+    
+    .AnsweredMarked span, .blue{
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,221,214,1) 0%, rgba(51,102,255,1) 90% );
+        padding: 12px 20px;
+    }
+    #Legends{
+        margin-top: 0px;
+    }
+
+}
+
+@media (max-width: 380px) {
+    .textwelcome1 ::after{
+        content: "\a";
+        white-space: pre;
+    }
+    .textwelcome1{
+        margin-left: 100px;
+    }
+    .textwelcome2{
+        margin-right: 60px;
+    }
+    #button5 {
+        margin: 0% 3%;
+    }
+}
+
+/* animations */
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes counter_rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-180deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+/*question animation*/
+
+@keyframes slide-left {
+    from {
+      margin-left: 80%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 3.5%;
+      width: 100%;
+    }
+}
+
+ /*timer animation*/
+
+@keyframes skew-y-shake {
+    0% { transform: skewY(-15deg); }
+    5% { transform: skewY(15deg); }
+    10% { transform: skewY(-15deg); }
+    15% { transform: skewY(15deg); }
+    20% { transform: skewY(0deg); }
+    100% { transform: skewY(0deg); }  
+}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillUp IT Academy : An IT Training Institute</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+
+    <nav class="navbar bg-white sticky-top sticky">
+      <div class="container-fluid d-flex justify-content-center">
+        <img
+          src="images/tree_logo.jpg"
+          alt="tree"
+          width="4%"
+          class="tree-logo"
+          style="margin-right: 15px"
+        />
+        <img src="images/logo.png" alt="Logo" width="14%" class="nav-logo" />
+      </div>
+    </nav>
+
+    <!-- end of navbar -->
+    <!-- main body -->
+
+    <div class="main-body">
+      <div class="row">
+        <div class="col-lg-9 col-md-12 main-content">
+          <!-- main body upper text -->
+          <div class="card mt-2">
+            <div class="upper-text">
+              <span class="textwelcome1" style="float: left"
+                >C++ Online Test</span
+              >
+              <span class="textwelcome2" id="timer" style="float: right"
+                >Remaining Time: <span id="remaining_time"></span>
+              </span>
+            </div>
+            <!-- question display -->
+            <div class="questionDisplay" id="questionWindow">
+              <div class="sectionQuestion clearfix">
+                <span class="question" id="questionNo"></span>
+                <span class="marks" id="questionMarks"></span>
+              </div>
+              <br />
+              <div class="questionsDetails">
+                <div class="question" id="question1">
+                  <!-- How can we describe an array in the best possible way ? -->
+                </div>
+                <div class="questionOptions">
+                  <input
+                    class="options"
+                    id="option1"
+                    type="radio"
+                    value="a"
+                    name="option"
+                  />
+                  <div class="btn btn_option" id="pickup-1">
+                    <!-- The Array shows a hierarchical structure -->
+                  </div>
+                  <br />
+                  <input
+                    class="options"
+                    id="option2"
+                    type="radio"
+                    value="b"
+                    name="option"
+                  />
+                  <div class="btn btn_option" id="pickup-2">
+                    <!-- Arrays are immutable. -->
+                  </div>
+                  <br />
+                  <input
+                    class="options"
+                    id="option3"
+                    type="radio"
+                    value="c"
+                    name="option"
+                  />
+                  <div class="btn btn_option" id="pickup-3">
+                    <!-- Container that stores the elements of similar types -->
+                  </div>
+                  <br />
+
+                  <input
+                    class="options"
+                    id="option4"
+                    type="radio"
+                    value="d"
+                    name="option"
+                  />
+                  <div class="btn btn_option" id="pickup-4">
+                    <!-- The Array is not a data structure -->
+                  </div>
+                </div>
+              </div>
+              <div class="main-question">
+                <div class="questionFooter">
+                  <center>
+                    <button
+                      type="button"
+                      class="btn btn mt-2"
+                      id="button1"
+                      style="background-color: #133382"
+                    >
+                      Previous
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn mt-2"
+                      id="button2"
+                      style="background-color: #f54a8d"
+                    >
+                      Mark Review &amp; Next
+                    </button>
+                  </center>
+                </div>
+                <div class="questionFooter">
+                  <center>
+                    <button
+                      type="button"
+                      class="btn btn mt-2"
+                      id="button3"
+                      style="background-color: #133382"
+                    >
+                      Clear Response
+                    </button>
+                    <button
+                      type="button"
+                      class="btn mt-2"
+                      id="button4"
+                      style="background-color: #f54a8d"
+                      ;
+                    >
+                      Next
+                    </button>
+                  </center>
+                </div>
+              </div>
+              <div class="questionFooter d-grid gap-2">
+                <button
+                  class="btn btn-submit mb-3"
+                  type="button"
+                  id="button5"
+                  style="background-color: #133382"
+                >
+                  Submit Test
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- side section -->
+        <div class="col-lg-3 col-md-12 sidebar">
+          <div class="card-left_1 mt-2">
+            <div class="row ms-2 me-2" id="section">
+              <!-- <div class="col-2 notVisited"><span id="1">1</span></div> -->
+            </div>
+          </div>
+          <!-- card right bottom -->
+          <div class="card-left_2 mt-2">
+            <div class="card-title" id="Legends" style="font-size: 20px">
+              LEGENDS
+            </div>
+            <div class="row mt-2">
+              <div class="col col-lg-2 col-md-1 col-sm-1 NotVisited">
+                <span></span>
+              </div>
+              <span class="col col-lg-3 col-md-2 col-sm-1 color_text me-2"
+                >Not Visited</span
+              >
+              <div class="col col-lg-2 col-md-1 col-sm-1 NotAnswered">
+                <span></span>
+              </div>
+              <span class="col col-lg-3 col-md-2 col-sm-1 color_text"
+                >Not Answered</span
+              >
+            </div>
+            <div class="row mt-3">
+              <div class="col col-lg-2 col-md-1 col-sm-1 Answered">
+                <span></span>
+              </div>
+              <span class="col col-lg-3 col-md-2 col-sm-1 color_text me-2"
+                >Answered</span
+              >
+              <div class="col col-lg-2 col-md-1 col-sm-1 MarkedForReview">
+                <span></span>
+              </div>
+              <span class="col col-lg-3 col-md-2 col-sm-1 color_text"
+                >Marked Review</span
+              >
+            </div>
+            <div class="row mt-3">
+              <div
+                class="col-1 col-lg-2 col-md-1 col-sm-1 col-xs-1 AnsweredMarked"
+              >
+                <span></span>
+              </div>
+              <span
+                class="col col-lg-9 col-md-9 col-sm-9 col-xs-9 color_text space"
+                >Answered & <br />
+                Marked Review</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end main body -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
+      integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

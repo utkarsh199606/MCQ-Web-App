@@ -1,0 +1,90 @@
+[
+    {
+        "id": "1",
+        "marks": "2",
+        "question": "Who invented C++?",
+        "a": "Dennis Ritchie",
+        "b": "Ken Thompson",
+        "c": "Brian Kernighan",
+        "d": "Bjarne Stroustrup",
+        "correct": "d",
+        "answercheck": ""
+    },
+    {
+        "id": "2",
+        "marks": "1",
+        "question": "What is C++?",
+        "a": "C++ is an object oriented programming language",
+        "b": "C++ is a procedural programming language",
+        "c": "C++ supports both procedural and object oriented programming language",
+        "d": "C++ is a functional programming language",
+        "correct": "c",
+        "answercheck": ""
+    },
+    {
+        "id": "3",
+        "marks": "3",
+        "question": "Which of the following is the correct syntax of including a user defined header files in C++?",
+        "a": "#include [userdefined]",
+        "b": "#include “userdefined”",
+        "c": "#include <userdefined.h>",
+        "d": "#include <userdefined>",
+        "correct": "b",
+        "answercheck": ""
+    },
+    {
+        "id": "4",
+        "marks": "2",
+        "question": "Which of the following is used for comments in C++?",
+        "a": "/* comment */",
+        "b": "// comment */",
+        "c": "// comment",
+        "d": "both // comment or /* comment */",
+        "correct": "d",
+        "answercheck": ""
+    },
+    {
+        "id": "5",
+        "marks": "1",
+        "question": "Which of the following user-defined header file extension used in c++?",
+        "a": "hg",
+        "b": "cpp",
+        "c": "h",
+        "d": "hf",
+        "correct": "c",
+        "answercheck": ""
+    },
+    {
+        "id": "6",
+        "marks": "2",
+        "question": "Which of the following is not a type of Constructor in C++?",
+        "a": "Default constructor",
+        "b": "Parameterized constructor",
+        "c": "Copy constructor",
+        "d": "Friend constructor",
+        "correct": "d",
+        "answercheck": ""
+    },
+    {
+        "id": "7",
+        "marks": "2",
+        "question": "Which of the following approach is used by C++?",
+        "a": "Left-right",
+        "b": "Right-left",
+        "c": "Bottom-up",
+        "d": "Top-down",
+        "correct": "c",
+        "answercheck": ""
+    },
+    {
+        "id": "8",
+        "marks": "1",
+        "question": "Which of the following type is provided by C++ but not C?",
+        "a": "double",
+        "b": "float",
+        "c": "int",
+        "d": "bool",
+        " correct": "d",
+        "answercheck": ""
+    }
+]
